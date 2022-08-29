@@ -1,0 +1,3 @@
+- [ ] Contact.
+- [ ] Projects Development Status.
+- [ ] Telegram Shared Post.

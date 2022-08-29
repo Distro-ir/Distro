@@ -1,0 +1,18 @@
+.holder {
+    margin: auto;
+    max-width: 1120px;
+    width: 100%;
+    padding: 0 16px;
+}
+
+.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+body {
+    background-color: rgb(255, 223, 181);
+}

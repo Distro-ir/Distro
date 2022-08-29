@@ -1,15 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="holder">
+    <a href="https://github.com/Distro-ir">
+      <img src="./assets/Icons/Distro-min.svg" alt="Main Logo" width="34">
+    </a>
+    <Launching />
+    <FooterVue />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Launching from './components/Launching.vue'
+import FooterVue from './components/Footer.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Launching,
+    FooterVue
   }
 }
 </script>
