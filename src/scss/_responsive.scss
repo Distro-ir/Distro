@@ -1,1 +1,9 @@
-// in Proccess.
+@media screen and (max-width: 940px) {
+    #app {
+        display: none;
+    }
+
+    #notResponsive {
+        display: contents;
+    }
+  }

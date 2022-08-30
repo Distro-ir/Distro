@@ -1,7 +1,7 @@
 <template>
     <div class="ButtonHandler">
         <a href="mailto:mehraxxn@gmail.com"><button>Membership Request</button></a>
-        <a href="https://github.com/Distro-ir"><button>Organization</button></a>
+        <a href="https://github.com/Distro-ir"><button id="organ">Organization</button></a>
     </div>
 </template>
 <script>
@@ -21,10 +21,22 @@ export default {
     border: 0;
     padding: 15px;
     border-radius: 18px;
-    background-color: azure;
+    background-color: #A5C9CA;
+    width: 200px;
 }
 
 .ButtonHandler button:hover {
-    background-color: rgb(255, 223, 181);
+    background-color: #E7F6F2;
+}
+
+#organ {
+    border: 3px solid #A5C9CA;
+    padding: 13px;
+    border-radius: 18px;
+    background-color: #E7F6F2; 
+}
+
+#organ:hover {
+    background-color: #A5C9CA;
 }
 </style>

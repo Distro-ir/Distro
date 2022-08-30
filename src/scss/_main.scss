@@ -14,5 +14,10 @@
 }
 
 body {
-    background-color: rgb(255, 223, 181);
+    background-color: #2C3333;
+    overflow-x: hidden;
+}
+
+#notResponsive {
+    display: none;
 }

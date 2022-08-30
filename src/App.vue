@@ -1,8 +1,6 @@
 <template>
   <div class="holder">
-    <a href="https://github.com/Distro-ir">
-      <img src="./assets/Icons/Distro-min.svg" alt="Main Logo" width="34">
-    </a>
+    <h2>Distro - Newspaper</h2>
     <Launching />
     <FooterVue />
   </div>
@@ -29,5 +27,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+h2 {
+  color: #E7F6F2;
 }
 </style>

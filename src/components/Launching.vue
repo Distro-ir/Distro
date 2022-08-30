@@ -1,13 +1,12 @@
 <template>
   <div class="Launching" align="center">
     <div class="header">
-      <img class="member no-select" src="../assets/intro_header.svg" alt="intro_image" width="400">
-      <p class="member"><b>Distro Foundation</b> - a
+      <img class="member no-select introimg" src="../assets/intro_header.svg" alt="intro_image" height="300">
+      <p id="begin" class="member"><b>Distro Foundation</b> - a
         foundation for supporting the open source world, producing and
         monitoring projects
         beneficial to the development communities of the world. By creating new ideas and implementing different ideas
         and releasing them for free in the world, the distro has taken a step in the development of Iran's open source
-        <br>
         communities,
         <ButtonVue />
       </p>
@@ -16,18 +15,47 @@
     <div class="handle">
       <div class="teamIntroContent">
         <h4>Contact</h4>
+        <div class="contact">
+          <div class="jim">
+            <img src="../assets/Icons/slack.svg" alt="Email" width="24">
+            <p id="p">Mehraxxn@gmail.com</p>
+          </div>
+          <p id="copy">Copy!</p>
+        </div>
+        <div class="contact">
+          <div class="jim">
+            <img src="../assets/Icons/phone.svg" alt="Phone" width="24">
+            <p id="p">+098921289</p>
+          </div>
+          <p id="copy">Copy!</p>
+        </div>
+        <h4>Status</h4>
+        <div class="statusOfProject">
+          <div class="contentMember">
+            <img src="../assets/Icons/user-plus.svg" alt="" width="34">
+            <p>+2</p>
+          </div>
+          <div class="contentMember">
+            <img src="../assets/Icons/refresh-cw.svg" alt="" width="34">
+            <p>+0</p>
+          </div>
+          <div class="contentMember">
+            <img src="../assets/Icons/award.svg" alt="" width="34">
+            <p>+0</p>
+          </div>
+        </div>
       </div>
       <div class="teamIntro">
         <h4>Team Member</h4>
         <div class="content">
           <img src="https://avatars.githubusercontent.com/u/77109284?v=4" alt="Team Member">
           <p id="p">Developer</p>
-          <p>Mehran</p>
+          <p id="name">Mehran</p>
         </div>
         <div class="content">
           <img src="https://avatars.githubusercontent.com/u/70762647?v=4" alt="Team Member">
           <p id="p">Developer</p>
-          <p> Amirhossein </p>
+          <p id="name"> Amir </p>
         </div>
         <div class="content">
           <p id="next">Next Friend ...</p>
@@ -74,9 +102,14 @@ a {
   color: #42b983;
 }
 
+#begin {
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
 .Launching {
-  background-color: white;
-  border: 3px solid white;
+  background-color: #395B64;
+  border: 3px solid #395B64;
   border-radius: 20px;
   margin: 30px;
   display: flex;
@@ -95,8 +128,8 @@ a {
 }
 
 .teamIntro {
-  background-color: rgb(255, 223, 181);
-  border: 3px solid rgb(255, 223, 181);
+  background-color: #E7F6F2;
+  border: 3px solid #E7F6F2;
   border-radius: 20px;
   margin: 30px;
   display: flex;
@@ -106,8 +139,9 @@ a {
 }
 
 .teamIntroContent {
-  background-color: rgb(255, 223, 181);
-  border: 3px solid rgb(255, 223, 181);
+  background-color: #E7F6F2;
+  border: 3px solid #E7F6F2;
+
   border-radius: 20px;
   margin: 30px;
   display: flex;
@@ -124,10 +158,10 @@ a {
 }
 
 .header {
-  background-color: rgb(255, 223, 181);
-  border: 3px solid rgb(255, 223, 181);
+  background-color: #E7F6F2;
+  border: 3px solid #E7F6F2;
   border-radius: 20px;
-  margin: 30px;
+  margin: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -139,8 +173,8 @@ a {
 }
 
 .Status {
-  background-color: rgb(255, 223, 181);
-  border: 3px solid rgb(255, 223, 181);
+  background-color: #E7F6F2;
+  border: 3px solid #E7F6F2;
   border-radius: 20px;
   margin: 30px;
   display: flex;
@@ -150,8 +184,8 @@ a {
 }
 
 .content {
-  background-color: white;
-  border: 3px solid white;
+  background-color: #A5C9CA;
+  border: 3px solid #A5C9CA;
   border-radius: 20px;
   margin: 30px;
   display: flex;
@@ -161,9 +195,14 @@ a {
 
 .content #p {
   font-size: smaller;
-  background-color: bisque;
+  background-color: #395B64;
   padding: 10px;
   border-radius: 20px;
+  color: #E7F6F2;
+}
+
+.content #name {
+  padding-bottom: 0px;
 }
 
 .content #next {
@@ -178,5 +217,60 @@ a {
 
 .member {
   flex: 1 1 200px;
+  width: fit-content;
+  text-align: left;
+}
+
+.introimg {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.contact {
+  margin-left: 60px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact #copy {
+  background-color: aqua;
+  border-radius: 20px;
+  padding: 9px;
+  font-size: smaller;
+}
+
+.contact #p {
+  font-size: smaller;
+  font-style: italic;
+  color: blue;
+  border-bottom: 3px dotted black;
+}
+
+.jim {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.statusOfProject {
+  background-color: #A5C9CA;
+  border: 3px solid #A5C9CA;
+  border-radius: 20px;
+  margin: 30px;
+  display: flex;
+  padding: 20px;
+  padding-bottom: 0px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.statusOfProject .contentMember {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.statusOfProject .contentMember img{
+  margin-left: 35px;
 }
 </style>

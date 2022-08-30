@@ -15,4 +15,12 @@ export default {
     flex-direction: row;
     justify-content: center;
 }
+
+.footer_Littel p {
+    color: #E7F6F2;
+}
+
+.footer_Littel p a {
+    color: #A5C9CA;
+}
 </style>
