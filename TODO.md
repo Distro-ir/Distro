@@ -2,3 +2,4 @@
 - [ ] Projects Development Status.
 - [ ] Telegram Shared Post.
 - [ ] Responsivable.
+- [ ] Responsive design (CSS)
